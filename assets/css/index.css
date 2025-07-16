@@ -1,20 +1,23 @@
 /* Reset and base styles */
 body {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
     margin: 0;
     padding: 0;
     font-family: "Inter", "Segoe UI", "Arial", sans-serif;
     color: #222;
     background-image: url("/assets/img/background3.jpg");
     background-size: cover;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(8px);
 }
 .container {
-    max-width: 480px;
-    margin: 40px auto;
+    height: fit-content;
+    width: 480px;
     background: #ffffff;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, .09);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+    margin: 40px 0;
     padding: 40px 30px 32px 30px;
     display: flex;
     flex-direction: column;
@@ -61,6 +64,7 @@ h1 {
     transition: all 0.2s ease;
     border: 1px solid #eaeaea;
     position: relative;
+    text-align: center;
 }
 .link:hover,
 .link:focus {
